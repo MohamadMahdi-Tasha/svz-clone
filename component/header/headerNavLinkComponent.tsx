@@ -20,11 +20,11 @@ export default function HeaderNavLinkComponent({title,link,children}:propsType):
             {
                 (children !== undefined)
                     ? (
-                        <div className={'flex gap-[10px] peer'}>
-                            <Link className={'py-[20px] block text-[1.25rem] font-serif text-white'} href={link}>{title}</Link>
-                            <button className={'px-[10px] py-[20px] font-serif text-white flex items-center justify-center'}>
-                                <span className={'transition-all duration-500 data-[opened="true"]:rotate-180'}><IconComponent size={15} name={'chevron-down'} /></span>
-                            </button>
+                        <div className={'peer'}>
+                            <Link className={'py-[20px] flex items-center justify-center gap-[10px] text-[1.25rem] font-serif text-white'} href={link}>
+                                {title}
+                                <IconComponent size={15} name={'chevron-down'} />
+                            </Link>
                         </div>
                     ) : (
                         <Link className={'text-[1.25rem] py-[20px] font-serif flex justify-center items-center h-full text-white whitespace-nowrap'} href={link}>{title}</Link>
@@ -34,9 +34,9 @@ export default function HeaderNavLinkComponent({title,link,children}:propsType):
             {
                 (children !== undefined)
                     ? (
-                        <div className={'absolute border-y border-y-white/20 top-[90px] left-0 w-full py-[20px] transition-all duration-500 invisible opacity-0 peer-hover:visible peer-hover:opacity-100 hover:visible hover:opacity-100'}>
-                            <div className={'container'}>
-                                <ul className={'grid grid-cols-4'}>{children}</ul>
+                        <div className={'absolute border-y bg-black border-y-white/20 top-[90px] z-[30] left-0 w-full py-[20px] transition-all duration-500 invisible opacity-0 peer-hover:visible peer-hover:opacity-100 hover:visible hover:opacity-100'}>
+                            <div className={'container z-[30]'}>
+                                <ul className={'grid grid-cols-4 z-[30]' }>{children}</ul>
                             </div>
                         </div>
                     ) : false

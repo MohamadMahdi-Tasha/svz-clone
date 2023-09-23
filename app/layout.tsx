@@ -4,6 +4,10 @@ import {Metadata} from "next";
 import {ReactNode} from "react";
 import '@/app/index.css';
 import HeaderComponent from "@/component/header/headerComponent";
+import { Nunito } from "next/font/google";
+
+// Defining Nunito Font To Use
+const NunitoFont = Nunito({ subsets: ['latin'] })
 
 // Creating And Exporting Meta Data Of Page
 export const metadata:Metadata = {
@@ -35,7 +39,7 @@ export default function LayoutComponent({children}:propsType):ReactNode {
     // Returning JSX
     return (
         <html>
-            <body className={'bg-black'}>
+            <body className={`bg-black ${NunitoFont.className}`}>
                 <HeaderComponent />
                 {children}
             </body>

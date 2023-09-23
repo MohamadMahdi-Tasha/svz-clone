@@ -11,13 +11,13 @@ import HeaderInnerLinkComponent from "@/component/header/headerInnerLinkComponen
 export default function HeaderComponent():ReactNode {
     // Returning JSX
     return (
-        <header className={'lg:border-b-0 border-b border-b-white/20 lg:static fixed lg:backdrop-blur-0 backdrop-blur top-0 left-0 w-full'}>
-            <div className={'container flex items-center lg:justify-between justify-center gap-[20px]'}>
+        <header className={'lg:border-b-0 border-b border-b-white/20 lg:static fixed lg:backdrop-blur-0 backdrop-blur top-0 left-0 w-full lg:mt-[50px]'}>
+            <div className={'container lg:py-0 py-[20px] flex items-center lg:justify-between justify-center gap-[20px]'}>
                 <Link href={'/'}>
                     <Image src={LogoTypo.src} alt={'SVZ Logo Typo'} width={81} height={38} />
                 </Link>
                 <nav>
-                    <ul className={'lg:flex hidden items-center gap-[20px]'}>
+                    <ul className={'lg:flex hidden gap-[20px]'}>
                         <HeaderNavLinkComponent link={'#'} title={'Services'}>
                             <HeaderInnerLinkComponent link={'#'} title={'SVZ | Suite'} icon={'bag'}>Our end-to-end suite of agency services</HeaderInnerLinkComponent>
                             <HeaderInnerLinkComponent link={'#'} title={'SVZ | Growth'} icon={'scale'}>Strategy, media buying, PPC, and SMM team</HeaderInnerLinkComponent>

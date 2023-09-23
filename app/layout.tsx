@@ -10,7 +10,17 @@ export const metadata:Metadata = {
     themeColor: '#00000',
     viewport: 'width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0',
     manifest: '/manifest.json',
-    robots: '/robots.txt'
+    robots: '/robots.txt',
+    openGraph: {
+        title: 'SVZ Design | Clone',
+        description: 'Clone Of SVZ Design Page By Webflow',
+        type: 'website'
+    },
+    twitter: {
+        title: 'SVZ Design | Clone',
+        description: 'Clone Of SVZ Design Page By Webflow',
+        card: 'summary_large_image'
+    }
 }
 
 // Defining Type Of Props

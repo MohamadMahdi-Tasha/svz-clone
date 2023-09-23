@@ -5,7 +5,7 @@ import {ReactNode} from "react";
 
 // Creating And Exporting Meta Data Of Page
 export const metadata:Metadata = {
-    title: 'SVZ Design Clone',
+    title: 'SVZ Design | Clone',
     keywords: 'Design,SVZ,clone,resume,github,nextjs,tailwind,react,webflow',
     themeColor: '#00000',
     viewport: 'width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0',

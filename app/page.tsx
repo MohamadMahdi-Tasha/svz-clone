@@ -3,7 +3,6 @@
 import {ReactNode} from "react";
 
 // Creating And Exporting Home Page As Default
-
 export default function HomePage():ReactNode {
     // Returning JSX
     return (

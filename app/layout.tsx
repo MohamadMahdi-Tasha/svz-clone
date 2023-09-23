@@ -3,6 +3,7 @@
 import {Metadata} from "next";
 import {ReactNode} from "react";
 import '@/app/index.css';
+import HeaderComponent from "@/component/header/headerComponent";
 
 // Creating And Exporting Meta Data Of Page
 export const metadata:Metadata = {
@@ -34,7 +35,8 @@ export default function LayoutComponent({children}:propsType):ReactNode {
     // Returning JSX
     return (
         <html>
-            <body>
+            <body className={'bg-black'}>
+                <HeaderComponent />
                 {children}
             </body>
         </html>

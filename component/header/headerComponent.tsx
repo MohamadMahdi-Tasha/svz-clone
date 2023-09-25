@@ -17,7 +17,7 @@ export default function HeaderComponent():ReactNode {
                     <Image src={LogoTypo.src} alt={'SVZ Logo Typo'} width={81} height={38} />
                 </Link>
                 <nav>
-                    <ul className={'lg:flex hidden gap-[20px]'}>
+                    <ul className={'lg:flex hidden gap-[20px] z-[20]'}>
                         <HeaderNavLinkComponent link={'#'} title={'Services'}>
                             <HeaderInnerLinkComponent link={'#'} title={'SVZ | Suite'} icon={'bag'}>Our end-to-end suite of agency services</HeaderInnerLinkComponent>
                             <HeaderInnerLinkComponent link={'#'} title={'SVZ | Growth'} icon={'scale'}>Strategy, media buying, PPC, and SMM team</HeaderInnerLinkComponent>

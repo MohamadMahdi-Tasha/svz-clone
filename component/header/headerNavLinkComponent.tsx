@@ -35,8 +35,8 @@ export default function HeaderNavLinkComponent({title,link,children}:propsType):
                 (children !== undefined)
                     ? (
                         <div className={'absolute border-y bg-black border-y-white/20 top-[90px] z-[30] left-0 w-full py-[20px] transition-all duration-500 invisible opacity-0 peer-hover:visible peer-hover:opacity-100 hover:visible hover:opacity-100'}>
-                            <div className={'container z-[30]'}>
-                                <ul className={'grid grid-cols-4 z-[30]' }>{children}</ul>
+                            <div className={'container'}>
+                                <ul className={'grid grid-cols-4'}>{children}</ul>
                             </div>
                         </div>
                     ) : false

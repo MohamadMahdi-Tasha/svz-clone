@@ -39,7 +39,7 @@ export default function LayoutComponent({children}:propsType):ReactNode {
     // Returning JSX
     return (
         <html>
-            <body className={`bg-black ${NunitoFont.className}`}>
+            <body className={`bg-black ${NunitoFont.className} overflow-x-hidden`}>
                 <HeaderComponent />
                 {children}
             </body>

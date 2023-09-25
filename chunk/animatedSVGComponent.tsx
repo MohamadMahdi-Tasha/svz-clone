@@ -1,13 +1,24 @@
+// Forcing NextJS To Render This Component As Client Side Component
+'use client';
+
 // Codes By Mahdi Tasha
 // Importing Part
 import {ReactNode} from "react";
 import '@/public/assets/style/animatedSVGComponent.style.css';
+import {motion} from 'framer-motion';
 
 // Creating And Exporting Animated SVG Component As Default
 export default function AnimatedSVGComponent():ReactNode {
     // Returning JSX
     return (
-        <div className={'absolute lg:bottom-[30vw] bottom-0 w-full left-0 overflow-hidden z-[-10]'}>
+        <motion.div
+            variants={{
+                hidden: {opacity: 0},
+                visible: {opacity: 100},
+            }}
+            transition={{duration: 1}}
+            initial={'hidden'}
+            animate={'visible'} className={'absolute lg:bottom-[30vw] bottom-0 w-full left-0 overflow-hidden z-[-10]'}>
             <div className={'dust-texture absolute top-0 left-0 w-full h-full z-[1]'} />
             <div className={'bg-gradient-to-b from-transparent to-black lg:hidden block absolute top-0 left-0 w-full h-full z-[1]'} />
             <div className={'flex svg-holder -z-[1]'}>
@@ -1564,6 +1575,6 @@ export default function AnimatedSVGComponent():ReactNode {
                     </g>
                 </svg>
             </div>
-        </div>
+        </motion.div>
     );
 }

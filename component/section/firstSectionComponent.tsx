@@ -9,11 +9,11 @@ export default function FirstSectionComponent(): ReactNode {
     // Returning JSX
     return (
         <section>
-            <main className={'min-h-[150vh] relative -z-[10]'}>
+            <main className={'lg:min-h-[150vh] min-h-[65vh] relative -z-[10] lg:mb-0 mb-[20px]'}>
                 <div>
                     <div className={'container'}>
                         <div className={'lg:ml-[200px] lg:mt-[20px] mt-[100px]'}>
-                            <h1 className={'text-white font-normal text-[2rem] mb-[30px] z-[10]'}>
+                            <h1 className={'text-white font-normal lg:text-[2rem] text-[1.5rem] mb-[30px] z-[10]'}>
                                 Offering a suite of Enterprise grade <br/>
                                 services to B2B Saas, VC's, Start-up's, <br/>
                                 and E-commerce

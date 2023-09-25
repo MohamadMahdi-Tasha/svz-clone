@@ -7,8 +7,9 @@ import '@/public/assets/style/animatedSVGComponent.style.css';
 export default function AnimatedSVGComponent():ReactNode {
     // Returning JSX
     return (
-        <div className={'absolute bottom-[30vw] w-full left-0 overflow-hidden z-[-10] lg:block hidden'}>
+        <div className={'absolute lg:bottom-[30vw] bottom-0 w-full left-0 overflow-hidden z-[-10]'}>
             <div className={'dust-texture absolute top-0 left-0 w-full h-full z-[1]'} />
+            <div className={'bg-gradient-to-b from-transparent to-black lg:hidden block absolute top-0 left-0 w-full h-full z-[1]'} />
             <div className={'flex svg-holder -z-[1]'}>
                 <svg className={'w-[120vw] shrink-0'} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" preserveAspectRatio="xMidYMid meet">
                     <defs>

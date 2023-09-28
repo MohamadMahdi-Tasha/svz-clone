@@ -9,9 +9,9 @@ import AnimatableComponent from "@/chunk/animatableComponent";
 export default function FirstSectionComponent(): ReactNode {
     // Returning JSX
     return (
-        <section>
+        <section className={'mb-[100px]'}>
             <main className={'lg:min-h-[150vh] min-h-[65vh] relative -z-[10] lg:mb-0 mb-[20px]'}>
-                <div>
+                <div className={'container'}>
                     <AnimatableComponent noScroll transition={{
                         duration: 2,
                         delay: 1
@@ -39,10 +39,10 @@ export default function FirstSectionComponent(): ReactNode {
                         visible: {opacity: 100},
                     }}
                 >
-                    <div className={'w-[80%] relative mx-auto'}>
-                        <div className={'absolute w-[100px] h-full left-0 top-0 bg-gradient-to-l from-transparent to-black'} />
+                    <div className={'lg:w-[80%] w-full relative mx-auto'}>
+                        <div className={'absolute w-[200px] h-full left-0 top-0 bg-gradient-to-l from-transparent to-black'} />
                         <img src={CompanysImage.src} className={'w-full mx-auto'} alt="Companys Logo"/>
-                        <div className={'absolute w-[100px] h-full right-0 top-0 bg-gradient-to-r from-transparent to-black'} />
+                        <div className={'absolute w-[200px] h-full right-0 top-0 bg-gradient-to-r from-transparent to-black'} />
                     </div>
                 </AnimatableComponent>
             </footer>

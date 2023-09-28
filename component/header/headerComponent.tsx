@@ -1,6 +1,3 @@
-// Forcing NextJS To Render This Component As Client Side Component
-'use client';
-
 // Codes By Mahdi Tasha
 // Importing Part
 import {ReactNode} from "react";
@@ -9,21 +6,21 @@ import Link from 'next/link';
 import LogoTypo from '@/public/assets/img/img-logo-typo.svg';
 import HeaderNavLinkComponent from "@/component/header/headerNavLinkComponent";
 import HeaderInnerLinkComponent from "@/component/header/headerInnerLinkComponent";
-import {motion} from 'framer-motion';
+import AnimatableComponent from "@/chunk/animatableComponent";
 
 // Creating And Exporting Header Component As Default
 export default function HeaderComponent():ReactNode {
     // Returning JSX
     return (
-        <motion.header
+        <AnimatableComponent
+            noScroll
             variants={{
                 hidden: {opacity: 0},
                 visible: {opacity: 100},
             }}
             transition={{duration: 1}}
-            initial={'hidden'}
-            animate={'visible'}
-            className={'lg:border-b-0 border-b border-b-white/20 bg-black/20 z-[30] lg:static fixed lg:backdrop-blur-0 backdrop-blur top-0 left-0 w-full lg:mt-[50px]'}>
+            className={'lg:border-b-0 border-b border-b-white/20 bg-black/20 z-[30] lg:static fixed lg:backdrop-blur-0 backdrop-blur top-0 left-0 w-full lg:mt-[50px]'}
+        >
             <div className={'container lg:py-0 py-[20px] flex items-center lg:justify-between justify-center gap-[20px]'}>
                 <Link href={'/'}>
                     <Image src={LogoTypo.src} alt={'SVZ Logo Typo'} width={81} height={38} />
@@ -45,6 +42,6 @@ export default function HeaderComponent():ReactNode {
                     </ul>
                 </nav>
             </div>
-        </motion.header>
+        </AnimatableComponent>
     );
 }

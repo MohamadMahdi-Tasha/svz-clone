@@ -31,15 +31,17 @@ export default function FirstSectionComponent(): ReactNode {
                     <AnimatedSVGComponent />
                 </div>
             </main>
-            <AnimatableComponent
-                transition={{duration: 1}}
-                variants={{
-                    hidden: {opacity: 0},
-                    visible: {opacity: 100},
-                }}
-            >
-                <img src={CompanysImage.src} className={'w-[80%] mx-auto'} alt="Companys Logo"/>
-            </AnimatableComponent>
+            <footer>
+                <AnimatableComponent
+                    transition={{duration: 1}}
+                    variants={{
+                        hidden: {opacity: 0},
+                        visible: {opacity: 100},
+                    }}
+                >
+                    <img src={CompanysImage.src} className={'w-[80%] mx-auto'} alt="Companys Logo"/>
+                </AnimatableComponent>
+            </footer>
         </section>
     );
 }

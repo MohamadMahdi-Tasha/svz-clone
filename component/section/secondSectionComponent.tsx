@@ -2,6 +2,7 @@
 // Importing Part
 import {ReactNode} from "react";
 import SectionLinkComponent from "@/chunk/sectionLinkComponent";
+import AnimatableComponent from "@/chunk/animatableComponent";
 
 // Creating And Exporting Second Section Component As Default
 export default function SecondSectionComponent():ReactNode {
@@ -9,7 +10,10 @@ export default function SecondSectionComponent():ReactNode {
     return (
         <section>
             <main>
-                <div className={'flex gap-[20px] mb-[30px]'}>
+                <AnimatableComponent variants={{
+                    hidden: {opacity: 0},
+                    visible: {opacity: 1}
+                }} className={'flex gap-[20px] mb-[30px]'}>
                     <div className={'sm:w-[30%] w-[10%] h-[100px] lg:top-[90px] top-[120px] sticky'}>
                         <h6 className={'block -rotate-90 absolute top-[50%] left-[50%] translate-x-[-50%] -translate-y-[50%] text-white font-bold text-[26px]'}>PRODUCTS</h6>
                     </div>
@@ -43,7 +47,7 @@ export default function SecondSectionComponent():ReactNode {
                             <div className={'bg-blue-500 max-w-[100px] aspect-square'} />
                         </div>
                     </div>
-                </div>
+                </AnimatableComponent>
                 <SectionLinkComponent link={'#'}>
                     Read More
                 </SectionLinkComponent>

@@ -1,6 +1,5 @@
 // Codes By Mahdi Tasha
 // Importing Part
-
 import {ReactNode} from "react";
 import SectionLinkComponent from "@/chunk/sectionLinkComponent";
 

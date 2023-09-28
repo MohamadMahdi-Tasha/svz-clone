@@ -39,7 +39,11 @@ export default function FirstSectionComponent(): ReactNode {
                         visible: {opacity: 100},
                     }}
                 >
-                    <img src={CompanysImage.src} className={'w-[80%] mx-auto'} alt="Companys Logo"/>
+                    <div className={'w-[80%] relative mx-auto'}>
+                        <div className={'absolute w-[100px] h-full left-0 top-0 bg-gradient-to-l from-transparent to-black'} />
+                        <img src={CompanysImage.src} className={'w-full mx-auto'} alt="Companys Logo"/>
+                        <div className={'absolute w-[100px] h-full right-0 top-0 bg-gradient-to-r from-transparent to-black'} />
+                    </div>
                 </AnimatableComponent>
             </footer>
         </section>

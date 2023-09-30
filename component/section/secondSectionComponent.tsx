@@ -10,7 +10,7 @@ import ProductComponent from "@/component/productComponent";
 export default function SecondSectionComponent():ReactNode {
     // Returning JSX
     return (
-        <section>
+        <section className={'mb-[200px]'}>
             <main>
                 <AnimatableComponent variants={{
                     hidden: {opacity: 0},

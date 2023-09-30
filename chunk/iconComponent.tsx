@@ -42,5 +42,11 @@ export default function IconComponent({name,size}:propsType):ReactNode {
                 <path fillRule="evenodd" clipRule="evenodd" d="M9.42168 12L-0.000389188 2.02369L2.14234 -7.30042e-07L9.42168 7.70754L16.701 5.42718e-07L18.8437 2.02369L9.42168 12Z" fill="currentColor"/>
             </svg>
         );
+    } else if (name === 'chevron-right') {
+        return (
+            <svg width={size} height={size} viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fillRule="evenodd" clipRule="evenodd" d="M7.53975 5.99996L1.27151 11.92L0 10.5737L4.84274 5.99996L3.99845e-07 1.42626L1.27151 0.0799561L7.53975 5.99996Z" fill="currentColor"/>
+            </svg>
+        );
     }
 }

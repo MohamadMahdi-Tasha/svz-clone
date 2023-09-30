@@ -9,7 +9,7 @@ import AnimatableComponent from "@/chunk/animatableComponent";
 export default function FirstSectionComponent(): ReactNode {
     // Returning JSX
     return (
-        <section className={'mb-[100px]'}>
+        <section className={'mb-[100px] overflow-hidden lg:h-[500px] h-auto'}>
             <main className={'lg:min-h-[150vh] min-h-[65vh] relative -z-[10] lg:mb-0 mb-[20px]'}>
                 <div className={'container'}>
                     <AnimatableComponent noScroll transition={{
@@ -31,21 +31,6 @@ export default function FirstSectionComponent(): ReactNode {
                     <AnimatedSVGComponent />
                 </div>
             </main>
-            <footer>
-                <AnimatableComponent
-                    transition={{duration: 1}}
-                    variants={{
-                        hidden: {opacity: 0},
-                        visible: {opacity: 100},
-                    }}
-                >
-                    <div className={'lg:w-[80%] w-full relative mx-auto'}>
-                        <div className={'absolute w-[200px] h-full left-0 top-0 bg-gradient-to-l from-transparent to-black'} />
-                        <img src={CompanysImage.src} className={'w-full mx-auto'} alt="Companys Logo"/>
-                        <div className={'absolute w-[200px] h-full right-0 top-0 bg-gradient-to-r from-transparent to-black'} />
-                    </div>
-                </AnimatableComponent>
-            </footer>
         </section>
     );
 }

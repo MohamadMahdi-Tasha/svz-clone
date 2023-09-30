@@ -19,7 +19,7 @@ export default function WorkComponent({img,title,children}:propsType):ReactNode 
             visible: {opacity: 100, y: 0},
         }}>
             <a href={'#'}>
-                <img src={img} alt={`Image of ${title}`}/>
+                <img className={'w-full h-[700px] object-cover mb-[20px]'} src={img} alt={`Image of ${title}`}/>
                 <span className={'text-white text-[32px] text-bold mb-[20px] truncate w-full'}>{title}</span>
                 <p className={'text-white/80 text-[16px] text-light line-clamp-5'}>{children}</p>
             </a>

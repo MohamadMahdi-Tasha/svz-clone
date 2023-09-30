@@ -1,6 +1,5 @@
 /*Codes By Mahdi Tasha*/
 /*Custom Styles Of Animated SVG Component*/
-.dust-texture {background: url('../img/texture/img-grain.png');}
 .svg-holder > :nth-of-type(even) {transform: rotateY(180deg) translateX(1px);}
 .svg-holder {animation: svg-holder 40s linear infinite alternate-reverse;}
 .svg-holder {animation: svg-holder 40s linear infinite alternate-reverse;}

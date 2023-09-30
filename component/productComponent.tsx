@@ -20,7 +20,10 @@ export default function ProductComponent({iconColor,icon,children,title,willScal
                 <span className={'text-white text-[32px] text-bold mb-[20px] truncate w-full'}>{title}</span>
                 <p className={'text-white/80 text-[16px] text-light line-clamp-5'}>{children}</p>
             </div>
-            <div className={`${iconColor} max-w-[100px] aspect-square${(icon === 'circle') ? ' rounded-full' : ''}`} />
+            <div className={'relative overflow-hidden'}>
+                <div className={'dust-texture absolute top-0 left-0 w-full h-full'} />
+                <div className={`${iconColor} max-w-[100px] aspect-square${(icon === 'circle') ? ' rounded-full' : ''}`} />
+            </div>
         </a>
     );
 }

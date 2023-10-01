@@ -8,4 +8,6 @@
 .dust-texture {background: url('../public/assets/img/texture/img-grain.png');}
 .container {@apply mx-auto max-w-[1200px] px-[20px];}
 .section-title-holder {@apply sm:w-[20%] w-[10%] h-[150px] lg:top-[20px] top-[80px] sticky;}
-.section-title {@apply block -rotate-90 absolute top-[50%] left-[50%] translate-x-[-50%] -translate-y-[50%] text-white text-[20px];}
+.section-title {@apply block whitespace-nowrap -rotate-90 absolute top-[50%] left-[50%] translate-x-[-50%] -translate-y-[50%] text-white text-[20px];}
+.input {@apply p-[10px] border border-white placeholder:text-[16px] outline-0 text-[16px] bg-black placeholder:text-white text-white;}
+.bottom-bar-anchor {@apply after:duration-500 after:transition-all block relative after:absolute after:content-[''] after:top-full after:left-0 after:w-0 after:h-[1px] after:bg-white hover:after:w-full;}

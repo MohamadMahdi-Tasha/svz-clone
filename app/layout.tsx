@@ -5,6 +5,7 @@ import {ReactNode} from "react";
 import '@/app/index.css';
 import HeaderComponent from "@/component/header/headerComponent";
 import { Nunito } from "next/font/google";
+import FooterComponent from "@/component/footerComponent";
 
 // Defining Nunito Font To Use
 const NunitoFont = Nunito({ subsets: ['latin'] })
@@ -42,6 +43,7 @@ export default function LayoutComponent({children}:propsType):ReactNode {
             <body className={`bg-black ${NunitoFont.className} overflow-x-hidden`}>
                 <HeaderComponent />
                 {children}
+                <FooterComponent />
             </body>
         </html>
     );

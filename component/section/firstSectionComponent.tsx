@@ -9,7 +9,7 @@ import AnimatableComponent from "@/chunk/animatableComponent";
 export default function FirstSectionComponent(): ReactNode {
     // Returning JSX
     return (
-        <section className={'mb-[100px] overflow-hidden lg:h-[500px] h-auto'}>
+        <section className={'mb-[100px] overflow-hidden lg:h-[80vh] h-auto'}>
             <main className={'lg:min-h-[150vh] min-h-[65vh] relative -z-[10] lg:mb-0 mb-[20px]'}>
                 <div className={'container'}>
                     <AnimatableComponent noScroll transition={{
